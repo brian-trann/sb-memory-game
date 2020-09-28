@@ -1,0 +1,30 @@
+#game div {
+	border: 1px solid rgba(0, 0, 0, 0.351);
+	border-radius: 30px;
+	box-shadow: 3px 3px rgba(128, 128, 128, 0.345);
+	width: 15%;
+	height: 200px;
+	margin: 10px;
+	display: inline-block;
+}
+.tutorial {
+	width: 600px;
+	text-align: center;
+	margin: auto;
+	margin-top: 80px !important;
+}
+.hero {
+	margin-bottom: 20px;
+}
+body {
+	text-align: center;
+}
+/* .notification {
+	margin-top: 80px !important;
+} */
+.reset-game {
+	width: 600px;
+	text-align: center;
+	margin: auto;
+	margin-top: 40px;
+}
