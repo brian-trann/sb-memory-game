@@ -117,7 +117,7 @@ function handleCardClick(event) {
 		}
 	}
 
-	if (matchedCount === COLORS.length) {
+	if (matchedCount === randColorArray.length) {
 		setTimeout(function() {
 			document.querySelector('.reset-game').classList.remove('is-hidden');
 			const yourScore = document.querySelector('.reset-game p');
