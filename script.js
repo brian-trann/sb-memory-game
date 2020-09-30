@@ -5,14 +5,8 @@ let locked = false;
 let matchedCount = 0;
 let clickCount = 0;
 let bestScore = localStorage.getItem('best-score') || Infinity;
-// const COLORS = [ 'red', 'blue', 'green', 'orange', 'purple', 'red', 'blue', 'green', 'orange', 'purple' ];
 
 let multiplier = 5;
-
-// generate random hexcode as a sting. randomColor() // sometimes breaks due to invalid hex code
-// const randomColor = () => {
-// 	return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-// };
 
 //generate random rgba as a string
 const randomColor = () => {
@@ -151,25 +145,3 @@ tutorial.addEventListener('click', function(event) {
 		createDivsForColors(shuffledColors);
 	}
 });
-
-// Trying to make a resetGame function where I do not reload the page
-
-// I could not get this function to work correctly. The first time resetGame runs, everything is ok
-// the second time through, it seems like createDivsForColors is running twice.
-// may come back later.
-
-// function resetGame() {
-// 	document.querySelector('.reset-game').classList.toggle('is-hidden');
-// 	matchedCount = 0;
-// 	firstCard = null;
-// 	secondCard = null;
-// 	let flipped = document.querySelectorAll('.flip');
-// 	for (let i of flipped) {
-// 		// console.log(i);
-// 		i.classList.remove('.flip');
-// 		i.remove();
-// 		// console.log(i);
-// 	}
-// 	shuffle(COLORS);
-// 	createDivsForColors(shuffledColors);
-// }
